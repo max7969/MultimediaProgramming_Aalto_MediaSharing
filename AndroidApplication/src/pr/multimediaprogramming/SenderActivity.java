@@ -54,7 +54,7 @@ public class SenderActivity extends Activity {
 		// Put some images to project-folder: /res/drawable/
 		// format: jpg, gif, png, bmp, ...
 		
-		File directory = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+		File directory = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM);
 		
 		private ArrayList<File> myImageIds = getPictures(directory);
 		
