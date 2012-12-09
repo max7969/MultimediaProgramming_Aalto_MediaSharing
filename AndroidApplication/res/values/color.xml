@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purpleAalto">#6C41BA</color>
+    <color name="redAalto">#C00000</color>
+    <color name="yellowAalto">#FFC000</color>
+    <color name="orangeAalto">#FF7F0B</color>
+    <color name="white">#FFFFFF</color>
+</resources>

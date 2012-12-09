@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MultimediaProgramming</string>
+    <string name="hello_world">Bonjour</string>
+    <string name="button_sender">Send images</string>
+    <string name="button_send">Send these images</string>
+    <string name="button_receiver">Get images</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main_view">MainView</string>
+    <string name="title_activity_sender">SenderActivity</string>
+</resources>
