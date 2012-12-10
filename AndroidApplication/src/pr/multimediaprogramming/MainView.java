@@ -4,18 +4,14 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.View.OnFocusChangeListener;
-import android.view.View.OnTouchListener;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 public class MainView extends Activity implements View.OnClickListener {
 	
 	Button button_sender;
+	Button button_receiver;
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -23,8 +19,10 @@ public class MainView extends Activity implements View.OnClickListener {
         setContentView(R.layout.activity_main_view);
         
         button_sender = (Button) findViewById(R.id.button_sender);
+        button_receiver = (Button) findViewById(R.id.button_receiver);
         
         button_sender.setOnClickListener(clickListenerSenderButton);
+        button_receiver.setOnClickListener(clickListenerReceiverButton);
     }
 
     @Override
@@ -40,6 +38,13 @@ public class MainView extends Activity implements View.OnClickListener {
 	private OnClickListener clickListenerSenderButton = new View.OnClickListener() {
 		public void onClick(View v) {
 			Intent intent = new Intent(MainView.this, SenderActivity.class);
+			startActivity(intent);
+		}
+	};
+	
+	private OnClickListener clickListenerReceiverButton = new View.OnClickListener() {
+		public void onClick(View v) {
+			Intent intent = new Intent(MainView.this,ReceiverActivity.class);
 			startActivity(intent);
 		}
 	};

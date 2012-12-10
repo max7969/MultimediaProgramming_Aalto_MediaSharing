@@ -1,20 +1,14 @@
 package pr.multimediaprogramming;
 
 import java.io.*;
-import java.net.*;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Vector;
 
 import android.util.Log;
 
-
-
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
-import android.content.*;
 import android.provider.Settings.Secure;
 import android.app.Activity;
 import android.content.Context;
